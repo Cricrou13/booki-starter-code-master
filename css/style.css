@@ -137,37 +137,48 @@ h4 {
    height: 100%;
    font-weight: 700;
 }
-.hébergements {
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    gap: 30px;
-    width: 70%;
-    height: auto;
-    justify-content: space-between;
-}
 
 .flex {
     display: flex;
 }
 
+#accommodations {
+    width: 1340px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    gap: 30px;
+    height: auto;
+    justify-content: space-between;
+}
+
+.order-card {
+    display: flex;
+    height: 207px;
+    object-fit: cover;
+    gap: 30px;
+}
+
+.card-order {
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 50px;
+        box-sizing: border-box;
+}
+
 .card {
     background-color: #fff;
-    border-radius: 20px;
-    overflow: hidden;
+    border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    bottom: 15px;
-    gap: 4px;
+}
+
+.card img {
+    width: 259px;
+    height: 207px;
+    object-fit: cover;
 }
 
 .card:hover {
     transform: scale(1.02);
-}
-
-.card img {
-    width: 250px;
-    height: 207px;
-    object-fit: cover;
 }
 
 .card-content {
@@ -196,9 +207,87 @@ h4 {
 }
 
 
-/* Activités à Marseille */
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
 
-.Activity section {
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    width:65%;
+    background-color: #F2F2F2;
+}
+
+/* hebergement-populaire */
+
+.hebergement-populaire {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergement-populaire section {
+    margin-top: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+/****** Populaires ***********/
+
+.populaires {
+    width: 65%;
+}
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-card .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-card img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius :20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-card .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-card .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-card .card-subtitle {
+    margin: 0;
+}
+
+.populaires-card .card-rating {
+    margin-bottom: 5px;
+}
+
+
+/* Activités à Marseille
+
+.Activity { 
     padding: 20px;
     border-radius: 20px;
     gap: 5px;
@@ -214,8 +303,7 @@ h4 {
     margin: auto;
     bottom: 15px;
     gap: 30px;
-    width: 297px;
-    height: 439px;
+    width: 250px;
     object-fit: cover;
 }
 
@@ -232,13 +320,6 @@ h4 {
 
 .fa-solid {
     color: var(--main-color);
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
 }
 
 a {
@@ -272,85 +353,4 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
-}
-
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-/****** Hebergements ***********/
-.hebergements {
-    width:150%;
-    height:150%;
-    margin: 5px;
-}
-
-/* hebergement-populaire */
-
-.hebergement-populaire {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hebergement-populaire section {
-    padding: 30px;
-    margin-top: 30px;
-    border-radius: 30px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    width: 800px;
-    height: 614px;
-}
-/****** Populaires ***********/
-.populaires {
-    width: 32%;
-}
-
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 369px;
-    height: 26px;
-}
-
-.populaires-card .card {
-    display: flex;
-    margin-top: 33px;
-}
-
-.populaires-card img {
-    border-top-left-radius :20px;
-    border-bottom-left-radius: 20px;
-}
-
-.populaires-card .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-.populaires-card .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.populaires-card .card-subtitle {
-    margin: 0;
-}
-
-.populaires-card .card-rating {
-    margin-bottom: 5px;
-}
+} */
