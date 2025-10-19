@@ -56,7 +56,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-.filters button {
+.filters buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -93,7 +93,6 @@ h1 {
 
 .info i {
     color: #0065FC;
-
 }
 nav {
     display: flex;
@@ -142,27 +141,35 @@ h4 {
     display: flex;
 }
 
-#accommodations {
-    width: 1340px;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    gap: 30px;
-    height: auto;
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.justify-between {
     justify-content: space-between;
 }
 
-.order-card {
-    display: flex;
-    height: 207px;
-    object-fit: cover;
-    gap: 30px;
+#accommodationsMostpopular {
+ display: flex;
+ align-items: flex-start;
+ gap: 30px;
+ width:90%;
+ border-radius: 15px;
 }
 
-.card-order {
-        width: 100%;
-        max-width: 1440px;
-        padding: 0 50px;
-        box-sizing: border-box;
+.Marseille-accommodations {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#accommodations {
+    width: 65%;
+    background-color: #F2F2F2;
+}
+
+.px-30 {
+    padding: 0px 30px;
 }
 
 .card {
@@ -221,43 +228,22 @@ h4 {
 }
 
 /****** Hebergements ***********/
-.hebergements {
-    width:65%;
+#mostPopular {
+    width:25%;
     background-color: #F2F2F2;
 }
 
 /* hebergement-populaire */
 
-.hebergement-populaire {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hebergement-populaire section {
-    margin-top: 30px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-}
-/****** Populaires ***********/
-
-.populaires {
-    width: 65%;
-}
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires-card .card {
-    display: flex;
-    margin-top: 33px;
-}
-
 .populaires-card img {
-    width: 33%;
-    height: 136px;
+    width: 369px;
+    height: 146px;
     border-top-left-radius :20px;
     border-bottom-left-radius: 20px;
 }
@@ -285,7 +271,7 @@ h4 {
 }
 
 
-/* Activités à Marseille
+/* Activités à Marseille */
 
 .Activity { 
     padding: 20px;
@@ -353,4 +339,4 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
-} */
+}
