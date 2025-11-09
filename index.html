@@ -17,24 +17,23 @@
 
 <body>
     <div class="main-container">
-    <header>     
-        <img class="logo" src="images/logo/Booki.png" alt="Avatar">
-        <nav>
-        <ul id="menu">
-            <li><a href="#accommodations">Hébergements</a></li>
-            <li><a href="#activities">Activités</a></li>
-        </ul>
-        </nav>
-    </header>
-    </div>
+        <header>     
+            <img class="logo" src="images/logo/Booki.png" alt="Avatar">
+            <nav>
+            <ul>
+                <li><a href="#accommodations">Hébergements</a></li>
+                <li><a href="#Activities">Activités</a></li>
+            </ul>
+            </nav>
+        </header>
 <main>
-    <section>
+    <div>
         <section>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </section>
 
-        <section class="search-bar">
+        <form class="search-bar">
             <div class="location-icon bg-grey">
                 <i class="fa-solid fa-location-dot"></i>
             </div>
@@ -44,7 +43,7 @@
                 <span class="search-text">Rechercher</span>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-        </section>
+        </form>
                     
         <section class="filters">
             <h3>Filtres</h3>
@@ -71,11 +70,11 @@
             <i class="fa-solid fa-info fa-xs"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>  
-    </section>
+    </div>
     <section id="accommodationsMostpopular">
         <div id="accommodations" class="px-30 bg-grey">
             <h2>Hébergements à Marseille</h2>
-            <div class="flex mb-30 justify-between gp-15">
+            <div class="flex mb-30 justify">
                 <a href="#">
                     <article class="card">
                         <img src="images/hebergements/fred-kleber.jpg" alt="presentation chambre hotel du port">
@@ -92,6 +91,7 @@
                         </div>              
                     </article>
                 </a>
+
                 <a href="#"> 
                     <article class="card">
                         <img src="images/hebergements/febrian-zakaria.jpg" alt="presentation Hotel chez Amina">
@@ -127,7 +127,7 @@
                 </a>
           </div>
 
-            <div class="flex mb-30 justify-between">
+            <div class="flex mb-30 justify">
                 <a href="#">
                     <article class="card">
                         <img src="images/hebergements/annie-spratt.jpg" alt="presentation hotel de la mer">
@@ -256,7 +256,7 @@
         <h2>Activités à Marseille</h2>
         <div class="flex gap-padding">
             <a href="#">
-                <article class="card">
+                <article class="card-activity">
                     <img src="images/activites/reno-laithienne.jpg" alt="Vieux Port">              
                     <div class="card-content">
                         <h3>Vieux Port</h3> 
@@ -265,7 +265,7 @@
             </a>
 
             <a href="#">
-                <article class="card">
+                <article class="card-activity">
                     <img src="images/activites/paul-hermann.jpg" alt="Fort de Pomègues">
                     <div class="card-content">
                         <h3>Fort de Pomègues</h3> 
@@ -274,7 +274,7 @@
             </a>
 
             <a href="#">
-                <article class="card">
+                <article class="card-activity">
                     <img src="images/activites/kilyan-sockalingum.jpg" alt="Parc national des Calanques">
                     <div class="card-content">
                         <h3>Parc national des Calanques</h3>
@@ -283,7 +283,7 @@
             </a>
 
             <a href="#">
-                <article class="card">
+                <article class="card-activity">
                     <img src="images/activites/florian-wehde.jpg" alt="Notre Dame de la Garde">
                     <div class="card-content">
                         <h3>Notre Dame de la Garde</h3>
@@ -321,7 +321,7 @@
             </div>  
         </div> 
     </footer>
-</div>
+    </div>
 </body>
 
 </html>
