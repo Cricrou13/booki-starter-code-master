@@ -488,6 +488,12 @@ ul {
     nav ul {
         margin: 0;
     }
+
+    .search-bar {
+        margin: 20px;
+        margin-top: 30px;
+    }
+
    /* Hébergements à Marseille */
 
     #accommodations {
@@ -523,7 +529,7 @@ ul {
     /* Les plus populaires */
 
     #mostPopular {
-        width: 95%;
+        width: 90%;
         padding: 30px 30px;
     } 
 
@@ -628,7 +634,7 @@ ul {
 
     body {
         max-width: 100%;
-    }    
+    }
 }
 
 /* Mobiles */
@@ -638,13 +644,14 @@ ul {
     width: 100%;
     flex-grow: 1;
     display: flex;
-    justify-content: center; 
+    /* justify-content: center;  */
    }
    
     body {
     width: 100%;
     padding: 0;
     display: flex;
+    flex-direction: column;
    }
 
    .main-container {
@@ -665,8 +672,16 @@ ul {
     border-bottom: inset;
    }
 
-    nav li {
+    nav ul li {
         border-top: none;
+        padding-bottom: 18px;
+        padding-left: 0;
+    }
+
+    nav li:hover {
+        color: var(--main-color); 
+        border-bottom: 2px solid var(--main-color);
+        border-top: 2px transparent;
     }
 
     h1 {
@@ -705,6 +720,7 @@ ul {
         padding-left: 15px;
         padding-bottom: 15px;
         gap: 10px;
+        width: 20%;
     }
 
     .search-bar input {
@@ -715,6 +731,10 @@ ul {
     .filters {
         padding-left: 20px;
         gap: 0px;
+    }
+
+    .filter-btn {
+        width: 162px;
     }
 
     .info {
@@ -735,6 +755,8 @@ ul {
     #accommodations {
         background-color: white;
         width: auto;
+        margin: 0;
+        padding: 10px;
     }
 
     #accommodations .card img {
@@ -755,19 +777,51 @@ ul {
         gap: 15px;
     }
 
-    /* #mostPopular {
-        padding-right: 20px;
-        padding-left: 20px;
-        border-radius: 0;
-    } */
+    .section-title {
+        margin-top: 10px;
+    }
+    
+    .populaires-cards {
+        flex-direction: column;
+        width: 95%;
+    }
+    
+    #mostPopular {
+        padding: 15px;
+    }
 
-    #Activities .card-activity img {
+    .populaires-title {
+        align-items: baseline;
+        margin: 10px;
+    }
+
+    #Activities {
+        padding: 30px;
+    }
+
+    #Activities h2 {
+        padding: 40px 2px 20px;
+    }
+
+    .card-activity {
         width: 315px;
-        height: 141px;
+        margin: 0;
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        bottom: 15px;
+        gap: 30px;
+        object-fit: cover;
+    }
+
+    .card-activity img {
+        width: 100%;
     }
 
     footer {
         background-color: var(--main-bg-color);
+        display: block;
     }
 
     .footer-container {
