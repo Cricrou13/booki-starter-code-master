@@ -336,29 +336,9 @@ img {
     box-sizing: border-box;
 }
 
-.populaires-card {
-    width: 100%;
-    padding-left: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-    position: relative;
-    color: #000;
-}
-
 .card-content {
     flex-direction: column;
     justify-content: space-between;
-}
-
-.populaires-card .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.populaires-card .card-subtitle {
-    margin: 0;
 }
 
 .card-rating {
@@ -493,16 +473,17 @@ ul {
     body {
         width: 100%;
         display: flex;
-        justify-content: center; 
         margin: 0;
+        padding: 0;
     }
-
+ 
     .main-container {
+        max-width: 1440px;
         width: 100%;
-        padding: 0 50px;
+        padding: 0;
         margin: 0 50px;
         box-sizing: border-box;
-    }
+}
 
     nav ul {
         margin: 0;
@@ -510,8 +491,7 @@ ul {
    /* Hébergements à Marseille */
 
     #accommodations {
-        width: 100%;
-        padding: 0;
+        width: 95%;
     }
 
     #accommodations .card {
@@ -528,20 +508,24 @@ ul {
         gap: 50px;
     }
 
-    .mb-30 {
-        margin: 30px;
+    .justify{
+        justify-content: space-around;
     }
 
-    h2 {
-        padding: 0 35px;
+    .gap {
+        gap: 30px;
     }
 
-    h4 {
-        padding: 10px;
-        margin: 20px;
+    .px-30 {
+        padding: 30px 30px;
     }
 
     /* Les plus populaires */
+
+    #mostPopular {
+        width: 95%;
+        padding: 30px 30px;
+    } 
 
     .section-title {
         margin-left: 0px;
@@ -550,18 +534,34 @@ ul {
 
     .populaires-cards {
         flex-direction: row;
+        width: 100%;
+        gap: 20px;
     }
 
     .populaires-cards img {
         width: 91px;
-        height: auto;
         border-radius: 0;
     }
-    /* Activités à Marseille */
 
-    #Activities .card img {
+    .card-popular {
+        flex: 1;
+        display: flex;
+    }
+    /* Activités à Marseille */ 
+
+    #Activities {
+        margin: 0;
+    }  
+
+    .card-activity {
+        width: 193px;
+    }
+
+    .card-activity img {
         width: 193px;
         height: 200px;
+        object-fit: cover;
+        padding-bottom: 5px;
     }
 
     .gap-padding {
@@ -571,13 +571,13 @@ ul {
     }
 
     #Activities h2 {
-        padding: 35px 35px 0;
+        padding: 40px 20px 2px;
     }
 
     /* Pied de page */
 
     footer {
-        padding: 30px;
+        padding: 30px 0;
         display: flex;
         justify-content: center;
         padding-bottom: inherit;
@@ -633,7 +633,8 @@ ul {
 
 /* Mobiles */
 @media screen and (max-width:768px) {
-   html {
+  
+    html {
     width: 100%;
     flex-grow: 1;
     display: flex;
@@ -754,13 +755,13 @@ ul {
         gap: 15px;
     }
 
-    #mostPopular {
+    /* #mostPopular {
         padding-right: 20px;
         padding-left: 20px;
         border-radius: 0;
-    }
+    } */
 
-    #Activities .card img {
+    #Activities .card-activity img {
         width: 315px;
         height: 141px;
     }
