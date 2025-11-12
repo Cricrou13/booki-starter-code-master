@@ -47,12 +47,13 @@ nav ul {
     list-style-type: none;
     flex-direction: row;
     gap: 50px;
+    margin: 0;
 } 
 
 nav ul li {
-    padding-top: 18px;
-    padding-left: 0;
+    margin: 0;
     border-top: 2px solid transparent; 
+    padding-top: 20px;
 }
 
 nav li:hover {
@@ -130,7 +131,7 @@ h1 {
 .filter-btn {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
     background: white;
@@ -456,7 +457,6 @@ a {
 }
 
 footer {
-    height: 163px;
     padding: 15px;
     background-color: #F2F2F2;
 } 
@@ -473,19 +473,21 @@ ul {
 
     body {
         width: 100%;
-        /* margin: 0; */
         padding: 0;
     }
  
     .main-container {
         width: 100%;
-        padding: 0;
-        margin: 0 50px;
+        padding: 0 50px;
         box-sizing: border-box;
 }
 
     nav ul {
         margin: 0;
+    }
+
+    nav ul li {
+        padding-top: 20px;
     }
 
     .search-bar {
@@ -574,7 +576,7 @@ ul {
     }
 
     .gap-padding {
-        gap: 50px;
+        gap: 30px;
         padding: 0;
         padding-top: 0;
         justify-content: center;
@@ -588,8 +590,7 @@ ul {
 
     footer {
         display: flex;
-        justify-content: center;
-        padding-bottom: inherit;
+        justify-content: space-between;
     }
 
     .footer-container {
@@ -598,7 +599,6 @@ ul {
 
     .footer-section {
         width: 288px;
-        /* height: 163px; */
     }
 
     .footer-section ul li {
@@ -659,6 +659,7 @@ ul {
 
    .main-container {
         margin: 0;
+        padding: 0;
    }
     
    header {
@@ -675,14 +676,28 @@ ul {
         border-bottom: inset;
    }
 
+   nav {
+        width: 375px;
+   }
+
    nav ul {
-        gap: 70px;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        border-bottom: 2px solid #f2f2f2;
    }
 
     nav ul li {
+        flex-grow: 1;
         border-top: none;
-        padding-bottom: 18px;
         padding-left: 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #f2f2f2;
+    }
+
+    nav li a {
+        display: flex;
+        justify-content: center;
     }
 
     nav li:hover {
@@ -699,11 +714,18 @@ ul {
         padding-top: 20px;
     }
 
+    h4 {
+        margin: 10px;
+    }
+
     p {
         display: flex;
-        padding-right: 20px;
-        padding-left: 20px;
         gap: 8px;
+        padding: 10px 9px;
+    }
+
+    .info {
+        margin: 20px 10px;
     }
 
     .search-bar {
@@ -814,6 +836,19 @@ ul {
         margin: 10px;
     }
 
+    .card-content {
+        padding: 15px 15px 2px;
+    }
+
+    .card-content p {
+        margin: 5px 0 8px;
+        padding: 0;
+    }
+
+    .card-content h3 {
+        margin: 0;
+    }
+
     #Activities {
         padding: 30px;
     }
@@ -824,6 +859,7 @@ ul {
 
     .card-activity {
         width: 315px;
+        height: 200px;
         margin: 0;
         background-color: #fff;
         border-radius: 20px;
@@ -836,6 +872,7 @@ ul {
 
     .card-activity img {
         width: 100%;
+        height: 141px;
     }
 
     footer {
@@ -846,7 +883,6 @@ ul {
     .footer-container {
         display: flex;
         flex-direction: column;
-        padding: 10px 30px;
         gap: 50px;
     }
 
@@ -863,3 +899,4 @@ ul {
         height: 207px;
     }
 }
+
