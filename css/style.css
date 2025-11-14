@@ -402,6 +402,10 @@ img {
     justify-content: space-between;
 }
 
+.card-activity:hover {
+        transform: scale(1.02);
+}
+
 .card-activity img {
     width: 297px;
     height: 380px;
