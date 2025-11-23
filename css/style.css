@@ -147,12 +147,16 @@ h3 {
     font-size: 15px;
 }
 
-.filter-btn i, .fa-solid, .stars{
+.filter-btn i, .fa-solid, .stars {
     color: var(--main-color);
     font-size: 15px;
 }
 
 .filter-btn:hover {
+    background-color: #DEEBFF;
+}
+
+.filters-btn:hover {
     background-color: #DEEBFF;
 }
 
@@ -749,7 +753,7 @@ footer {
     .populaires-cards a {
         width: 90%;
         width: 90%;
-        margin: 0 10px;
+        margin: 0 20px;
     }
 
     .card-popular {
