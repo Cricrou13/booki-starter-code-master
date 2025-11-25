@@ -75,7 +75,7 @@ h1 {
 }
 
 h3 {
-    margin: 30px 0 24px;
+ margin: 0;
 }
 
 .search-bar {
@@ -133,6 +133,7 @@ h3 {
     align-items: center;
     gap: 16px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .filters-buttons {
@@ -202,7 +203,7 @@ h4 {
     padding-bottom: 15px;
 }
 
-.populaires-cards, .card-content, .cards-content, .card-activity, .gap-padding, .populaires-title, .hebergements-and-populaires, 
+.card-content, .cards-content, .card-activity, .gap-padding, .populaires-title, .hebergements-and-populaires, 
 .Marseille-accommodations, .justify, footer {
     justify-content: space-between;
     width: 100%;
@@ -230,7 +231,7 @@ h4 {
 }
 
 .gap {
-    gap: 10px;
+    gap: 20px;
 }
 
 .px-30, #Activities, .hebergements-and-populaires {
@@ -248,7 +249,7 @@ h4 {
 
 #accommodations .card {
     width: 100%;
-    height: 230px;
+    height: 215px;
 }
 
 .card-content {
@@ -257,13 +258,13 @@ h4 {
 
 .card-content h3 {
     font-size: 16px;
-    margin: 5px 1px;
+    margin: 2px 1px;
 }
 
 .card-content p {
     color:var(--color-text);
     font-size: 14px;
-    margin: 5px 0 8px;
+    margin: 0 0 8px;
 }
 
 .stars {
@@ -306,26 +307,18 @@ h4 {
     box-sizing: border-box;
 }
 
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
-}
-
 .populaires-cards {
     flex-direction: column;
     width: 100%;
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
+    margin-top: 1px;
     margin-bottom: 4px;
 }
 
 .card-subtitle {
     margin-top: 0;
-}
-
-.card-txt, .card-rating {
-    margin: 0 4px;
 }
 
 /* Activités à Marseille */
@@ -377,7 +370,7 @@ a {
     color: var(--main-bg-color)
 }
 
-.footer-container {
+.container {
     padding: 20px;
     gap: 20px;
     width: 100%;
@@ -407,7 +400,6 @@ a {
     .main-container {
         min-width: 768px;
         width: 100%;
-        padding: 0 50px;
         margin: 0;
         box-sizing: border-box;
     }
@@ -432,7 +424,7 @@ a {
     /* Hébergements à Marseille */
 
     #accommodations {
-        width: 91%;
+        width: calc(100% - 60px);
     }
 
     /* Les plus populaires */
@@ -510,12 +502,12 @@ a {
     }
 
     .cards-content h3 {
-        margin: 25px 2px;
+        margin: 25px 0;
     }
 
     /* Pied de page */
 
-    .footer-container {
+    .container {
         gap: 30px;
     }
 
@@ -558,6 +550,10 @@ a {
     #accommodationsMostpopular {
        flex-direction: column;
     }
+
+    .footer-section ul li {
+        margin: 15px 0;
+    }
 }
 
     /* Mobiles */
@@ -569,7 +565,7 @@ a {
 
     .main-container {
         min-width: 320px;
-        padding: 30px 10px;
+        padding: 0;
         margin: 0;
    }
     
@@ -606,7 +602,6 @@ a {
     }
 
     nav li:hover {
-        color: var(--main-color); 
         border-bottom: 3px solid var(--main-color);
         border-top: 2px transparent;
     }
@@ -622,14 +617,10 @@ a {
         margin: 10px;
     }
 
-    h3 {
-        margin: 0;
-    }
-
     p {
         display: flex;
         gap: 8px;
-        padding: 10px 1px;
+        padding: 5px 1px;
     }
 
     .info {
@@ -653,6 +644,10 @@ a {
         border-bottom: 4px solid #ccc;
     }
 
+    .start-pad {
+        padding: 10px;
+    }
+
     .search-bar input {
         width: 100%;
         padding: 12px 20px;
@@ -660,14 +655,18 @@ a {
 
     .search-bar {
         width: 100%;
-        margin: 20px 0;
+        margin: 0;
     }
 
+    .stars {
+        margin-top: 0;
+    }
 
     .all-filters {
         flex-direction: column;
         width: 100%;
     }
+
 
     .filters {
         width: 100%;
@@ -676,13 +675,16 @@ a {
     }
 
     .filters-buttons {
-        margin: 30px 0 10px;
         width: 100%;
     }
 
    .filters-btn {
         font-size: 17px;
         width: 48%;
+    }
+
+    .filters h3 {
+        margin-bottom: 20px;
     }
 
     .info {
@@ -716,7 +718,7 @@ a {
         width: 100%;
         display: flex;
         flex-direction: column;
-        height: 250px;
+        height: 207px;
     }
 
     #accommodationsMostpopular {
@@ -817,6 +819,7 @@ a {
         margin-left: 0;
         margin-right: 0;
         flex-direction: row;
+        padding: 0;
     }
 
     .card-activity img {
@@ -824,19 +827,17 @@ a {
         height: 141px;
     }
 
-    footer {
-        padding: 0;
-    }
-
     .footer-section {
-        width: 100%;
+        width: 80%;
         display: block;
+        margin: 20px 30px;
     }
 
-    .footer-container {
+    .container {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 0;
+        padding: 0;
     }
 
     .footer-section ul li {
